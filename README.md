@@ -20,7 +20,7 @@ Below, the ***United Nation’s Declaration of Human Rights*** is provided as a 
 
 * [x] Please fork and clone this repository. This repository does not have a starter project, so create one inside of the cloned repository folder. Regularly commit and push your code as appropriate.
 
-* [ ] Set the above to be a String in Java, so something like `String unText = "...";`
+* [x] Set the above to be a String in Java, so something like `String unText = "...";`
 
 * [ ] From this string, make a HashMap of each unique word and the frequency it appears in the text.
   * A word is delimited by a space or punctuation mark(s).
