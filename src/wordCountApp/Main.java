@@ -15,10 +15,44 @@ public class Main {
             rightsHashMap.put(hashcount, w);
             hashcount++;
         }
+        int countThe = 0;
+
         for(HashMap.Entry mapElem : rightsHashMap.entrySet())
         {
-            System.out.println("Key is: " + mapElem.getKey());
-            System.out.println("Value is: " + mapElem.getValue());
+            // System.out.println("Key is: " + mapElem.getKey());
+            if(mapElem.getValue().equals("the"))
+            {
+                countThe++;
+            }
+            else if(mapElem.getValue().equals("The"))
+            {
+                countThe++;
+            }
+            else if(mapElem.getValue().equals("THE"))
+            {
+                countThe++;
+            }
         }
+        System.out.println("Common Word <THE> occurs " + countThe + " times");
+        int countAnd = 0;
+
+        for(HashMap.Entry mapElem : rightsHashMap.entrySet())
+        {
+            // System.out.println("Key is: " + mapElem.getKey());
+            if(mapElem.getValue().equals("and"))
+            {
+                countAnd++;
+            }
+            else if(mapElem.getValue().equals("And"))
+            {
+                countAnd++;
+            }
+            else if(mapElem.getValue().equals("AND"))
+            {
+                countAnd++;
+            }
+        }
+        System.out.println("Common Word <AND> occurs " + countAnd + " times");
+
     }
 }
