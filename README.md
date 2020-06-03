@@ -22,14 +22,14 @@ Below, the ***United Nation’s Declaration of Human Rights*** is provided as a 
 
 * [x] Set the above to be a String in Java, so something like `String unText = "...";`
 
-* [ ] From this string, make a HashMap of each unique word and the frequency it appears in the text.
+* [x] From this string, make a HashMap of each unique word and the frequency it appears in the text.
   * A word is delimited by a space or punctuation mark(s).
   * The spaces and punctuation marks do NOT appear in the word list.
   * The word list is NOT case sensitive: Lambda / lambda will count as the same word.
   * Words such as co-operation that contain a hyphen are considered one word.
   * A hyphen alone does not separate words. Numbers count as one word, so 23 is a word.
 
-* [ ] Print to the console the top 50 appearing words along with their counts.
+* [x] Print to the console the top 50 appearing words along with their counts.
 
   * Remember that HashMaps are not sorted nor easily sortable. You could convert the HashMap to an array list and then sort the array list. Alternatively, you can find the most common word, print it, remove it, and repeat the process.
 
