@@ -1,5 +1,6 @@
 package wordCountApp;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Main {
@@ -27,8 +28,14 @@ public class Main {
         topFiftyWords.sort(Comparator.comparing(o -> (int) o.getValue(),Comparator.reverseOrder()));
         // System.out.println(topFiftyWords);
         for (int i = 0; i < 50; i++) {
+            alphabetTopFifty.add(i);
             System.out.print("Common Word <" + topFiftyWords.get(i).getKey() + "> occurs " + topFiftyWords.get(i).getValue() + " times.");
             System.out.println();
         }
+        System.out.println();
+        System.out.println("**** Stretch ****");
+
+
+
     }
 }
